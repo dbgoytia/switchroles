@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "switchroles/cmd"
+import "github.com/dbgoytia/switchroles/cmd"
 
 func main() {
 	cmd.Execute()
