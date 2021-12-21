@@ -29,13 +29,14 @@ var cfgFile string
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "switchroles",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
+	Short: "Easily switch between AWS roles",
+	Long: `
+Switchroles allows you to easily switch between AWS accounts,
+and AWS Org Master accounts. This allows SREs working on multiple
+environments to stay productive.
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+Integrates with aws-saml-auth and other token and MFA authentication
+mechanisms.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
